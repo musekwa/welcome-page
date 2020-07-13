@@ -12,16 +12,6 @@
   </head>
 
   <body>
-    <script  src="js/index.js"></script>
-    <script src="js/intlTelInput.js"></script>
-    <script>
-      var input = document.querySelector("#phone");
-      window.intlTelInput
-      (input, {
-       utilsScript: "js/utils.js",
-      });
-  </script>
-
     <nav id="navbar">
       <div>
       <img id="logo1" src="images/aic-ibs1.png" alt="aic-ibs">
@@ -68,7 +58,8 @@
           <input type="text" name="name" id="name" placeholder="Full name*" required>
           <input type="email" name="email" id="email" placeholder="Email*" required>
           <input type="tel" name="phone" id="phone" placeholder="Phone number">
-          <select id="country" name="country" required>
+          <select id="country" name="country" style="color: black;" required>
+            <optgroup>
               <option value="Country of Residence">Country of Residence*</option>
               <option value="Afganistan">Afghanistan</option>
               <option value="Albania">Albania</option>
@@ -316,6 +307,7 @@
               <option value="Zaire">Zaire</option>
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
+            </optgroup>
         </select>
         <input id="submit" type="submit" name="submit" id="submit" value="SEND" style="background-color: salmon;">
         </form>
@@ -335,7 +327,7 @@
     <div id="main-doc3">
       <h2>Additional Information</h2>
       <section>
-        <header>Crash Course</header>
+        <header  style="font-weight: bold;">Crash Course</header>
         <p>
           This crash course is composed of a recorded class, an article on Innovation Management 
           along with Embraer’s study case, and a knowledge exam. The video lecture is available 
@@ -345,7 +337,7 @@
         </p>
       </section>
       <section>
-        <header>Enrollment and Participation</header>
+        <header  style="font-weight: bold;">Enrollment and Participation</header>
         <p>
           Enroll in the crash course by filling out your information in this page. 
           You will have access to the online learning platform, in which the course 
@@ -356,7 +348,7 @@
         </p>
       </section>
       <section>
-        <header>Collaborate, share</header>
+        <header style="font-weight: bold;">Collaborate, share</header>
         <p>
           This crash course is an IBS Americas initiative, supported by the State University of New York, 
           and has the objective of spreading knowledge in Business Administration from an 
@@ -379,8 +371,7 @@
       </div>
       <div id="foot2">
         <img src="images/aic-ibs1.png" alt="university logo">
-        <img src="images/ibs2.png" alt="university logo">
-        <p>SOCIAL MEDIA</p>
+        <img src="images/ibs2.png" alt="university logo"> 
       </div>
     </footer>
   </body>
