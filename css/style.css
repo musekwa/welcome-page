@@ -1,0 +1,85 @@
+
+#navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#welcome {
+    align-self: center;
+    justify-self: center;
+}
+
+#logo {
+    justify-self: start;
+    max-width: 40%;
+    height: auto;
+}
+
+#main-doc1{
+    background-color: rgba(90, 90, 111, 0.3);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+ select {
+     width: 75%;
+     height: 40px;
+     margin: 10px;
+ }
+
+ input {
+    width: 73.6%;
+    height: 40px;
+    margin: 10px;
+  }
+
+ #text-doc {
+     margin: 40px;
+     text-align: justify;
+     line-height: 20px;
+ }
+
+ #developer {
+     max-width: 50%;
+     height: auto;
+
+ }
+
+ #main-doc2 p {
+   margin-left: 20%;
+   margin-right: 20%;
+   text-align: justify;
+}
+
+figcaption {
+    font-size: xx-large;
+}
+
+ #main-doc2 {
+    width: 100%;
+    text-align: center;
+ }
+
+ @media (max-width: 700px){
+    #main-doc1{
+        background-color: rgba(90, 90, 111, 0.3);
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+    #text-doc {
+        margin: 10px;
+        text-align: justify;
+        line-height: 20px;
+    }
+ }
+
+ #main-doc3 {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto auto;
+     grid-area: 1/1/4/2;
+ }
